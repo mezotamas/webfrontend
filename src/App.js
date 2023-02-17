@@ -22,6 +22,7 @@ import Torles from "./sajatosztalyok/Torles"
 import Felvitel from "./sajatosztalyok/Felvitel"
 import Statisztika from "./sajatosztalyok/Statisztika"
 import Torlesvelemeny from "./sajatosztalyok/Torlesvelemeny"
+import Nevjegy from "./sajatosztalyok/Nevjegy"
 
 class App extends Component {
   constructor(props) {
@@ -58,7 +59,7 @@ class App extends Component {
       
       <div>
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-      <Navbar.Brand href="#home">
+      <Navbar.Brand href="">
         
         Mit Üzen Neked?
       </Navbar.Brand>
@@ -110,6 +111,11 @@ class App extends Component {
             <li className="nav-item">
                 <Link to={"/Statisztika"} className="nav-link">
                Statisztika
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link to={"/Nevjegy"} className="nav-link">
+               Névjegy
                 </Link>
               </li>
 
@@ -167,6 +173,7 @@ class App extends Component {
             <Route path="/Kezdolap" component={Kezdolap} />
             <Route path="/Velemeny" component={Velemeny} />
             <Route path="/Felvitel" component={Felvitel} />
+            <Route path="/Nevjegy" component={Nevjegy} />
         
         
         

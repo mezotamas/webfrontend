@@ -103,7 +103,10 @@ fetch(IP.ipcim+"torles_velemeny", {
 
 }
   velemeny=()=>{
-    
+    if(this.state.bevitel1=="" || this.state.bevitel2==""||this.state.bevitel3=="")
+    alert("Nem maradhat üresen!")
+    else{
+
     var bemenet={
       bevitel1:this.state.bevitel1,
       bevitelvelemenyid:this.state.valaszto2
@@ -123,7 +126,7 @@ fetch(IP.ipcim+"torles_velemeny", {
   }
     
     );
-  }
+  }}
   
   render(){
 

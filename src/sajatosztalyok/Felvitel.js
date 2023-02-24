@@ -41,6 +41,11 @@ export default class FetchExample extends React.Component {
 
   felvitel=()=>{
       //alert("Hello")
+      if(this.state.bevitel1=="" || this.state.bevitel2==""||this.state.bevitel3=="")
+      alert("Egyetlen sor sem maradhat üresen!")
+      else{
+
+      
       var bemenet={
         bevitel1:this.state.bevitel1,
         bevitel2:this.state.bevitel2,
@@ -64,7 +69,7 @@ export default class FetchExample extends React.Component {
     }
       
       );
-  
+      }
   }
   render(){
 

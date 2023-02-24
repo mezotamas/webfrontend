@@ -78,7 +78,10 @@ export default class FetchExample extends React.Component {
   
   }
   velemeny=()=>{
-    
+    if(this.state.bevitel1=="" || this.state.bevitel2==""||this.state.bevitel3=="")
+    alert("Nem maradhet üresen!")
+    else{
+
     var bemenet={
       bevitel1:this.state.bevitel1,
       bevitelvelemenyid:this.state.valaszto2
@@ -98,7 +101,7 @@ export default class FetchExample extends React.Component {
   }
     
     );
-  }
+  }}
   
   render(){
 

@@ -56,7 +56,11 @@ export default class FetchExample extends React.Component {
 
 
   keres=()=>{
+
       //alert("Hello")
+      if(this.state.bevitel1=="" )
+    alert("Nem maradhet üresen!")
+    else{
       var bemenet={
         bevitel1:this.state.szo
       }
@@ -74,11 +78,11 @@ export default class FetchExample extends React.Component {
       this.setState({dataSource: y})
     }
       
-      );
+  );}
   
   }
   velemeny=()=>{
-    if(this.state.bevitel1=="" || this.state.bevitel2==""||this.state.bevitel3=="")
+    if(this.state.bevitel1=="" )
     alert("Nem maradhet üresen!")
     else{
 

@@ -106,7 +106,7 @@ fetch(IP.ipcim+"torles_velemeny", {
 
 }
   velemeny=()=>{
-    if(this.state.bevitel1=="" || this.state.bevitel2==""||this.state.bevitel3=="")
+    if(this.state.bevitel1=="" )
     alert("Nem maradhat üresen!")
     else{
 

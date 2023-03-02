@@ -55,7 +55,7 @@ export default class FetchExample extends React.Component {
 
   keres=()=>{
       //alert("Hello")
-      if(this.state.bevitel1=="" || this.state.bevitel2==""||this.state.bevitel3=="")
+      if(this.state.bevitel1=="" )
       alert("Nem maradhat üresen!")
       else{
 

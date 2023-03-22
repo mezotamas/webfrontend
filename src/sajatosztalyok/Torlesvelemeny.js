@@ -58,9 +58,7 @@ export default class FetchExample extends React.Component {
 
   keres=()=>{
       //alert("Hello")
-      if(this.state.bevitel1=="" )
-    alert("Nem maradhet üresen!")
-    else{
+      
       var bemenet={
         bevitel1:this.state.szo
       }
@@ -80,7 +78,7 @@ export default class FetchExample extends React.Component {
       
       );}
   
-  }
+  
   torles=(szam)=>{
     alert(szam)
     var bemenet={
@@ -106,7 +104,7 @@ fetch(IP.ipcim+"torles_velemeny", {
 
 }
   velemeny=()=>{
-    if(this.state.bevitel1=="" || this.state.bevitel2==""||this.state.bevitel3=="")
+    if(this.state.bevitel1=="" )
     alert("Nem maradhat üresen!")
     else{
 
